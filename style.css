@@ -1,0 +1,149 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    width: 99%;
+    height: 97%;
+    background-image: url('main_bg.jpg');
+    background-size:cover;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    align-items:center;
+    padding:0px 40px;
+}
+.nav{
+    position: left;
+    left:-180px;
+}
+a{
+    padding:5px 15px;
+    color:orange;
+    font-size: 20px;
+    text-decoration:none;
+}
+a:hover{
+    color:white;
+    text-decoration: underline;
+    text-underline-position:under;
+}
+.search{
+    font-size: 25px;
+    color: orange;
+}
+.search i{
+    padding:5px 20px;
+    
+}
+/************heading**************/
+.heading{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:65px;
+    align-items:center;
+}
+.right{
+    width: 600px;
+    height: 300px;
+    background-image: url('logo.jpg');
+    background-position: cover;
+    border-radius: 400px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.right::before{
+    width: 600px;
+    height: 300px;
+    border:2px solid orange;
+    content: '';
+    position: absolute;
+    border-radius: 430px;
+    padding:10px;
+}
+
+/**********left************/
+.left p:nth-child(1){
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+.left h1{
+    font-size: 90px;
+    color:white;
+}
+.left p:nth-child(3){
+    color: orange;
+    font-size: 30px;
+    font-style: italic;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.left button{
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 20px;
+    border:2px solid white;
+    background-color:transparent;
+    color:white;
+    margin:100px 0px;
+    cursor: pointer;    
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;               
+    animation: fadeIn 1s forwards; 
+}
+
+
+.left button:hover {
+    background-color: orange; 
+    transform: scale(1.05);
+}
+/*********SocialMedia***************/
+.SocialMedia{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: 200px;
+    background-color:white;
+    font-size: 25px;
+
+}
+.SocialMedia i:hover {
+    color:orange;
+}
+
+
+/***************bottom***************/
+#map1,#route{
+    background-size:cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin:0px 20px;
+}
+#map1{
+    background-image: url('delhi_map.jpg');
+}
+#route{
+    background-image: url('Firefly\ 20240813145121.png');
+}
+.menu{
+    display:flex;
+    margin:20px 150px;
+}
